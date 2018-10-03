@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Caesar Shift</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="caesar.js"></script>
+</head>
+<body>
+	<div id="dec">
+		<h3>Decrypted</h3>
+		<textarea name="decrypted" id="msgDec" cols="30" rows="10"></textarea>
+	</div>
+	<div class="controls">
+		<button id="btnEnc">Encrypt</button>
+		A ↔ <select name="keySelect" id="key">
+			<option value="0">A</option>
+			<option value="1">B</option>
+			<option value="2">C</option>
+			<option value="3">D</option>
+			<option value="4">E</option>
+			<option value="5">F</option>
+			<option value="6">G</option>
+			<option value="7">H</option>
+			<option value="8">I</option>
+			<option value="9">J</option>
+			<option value="10">K</option>
+			<option value="11">L</option>
+			<option value="12">M</option>
+			<option value="13">N</option>
+			<option value="14">O</option>
+			<option value="15">P</option>
+			<option value="16">Q</option>
+			<option value="17">R</option>
+			<option value="18">S</option>
+			<option value="19">T</option>
+			<option value="20">U</option>
+			<option value="21">V</option>
+			<option value="22">W</option>
+			<option value="23">X</option>
+			<option value="24">Y</option>
+			<option value="25">Z</option>
+		</select>
+		<button id="btnDec">Decrypt</button>
+		<span class="subtle">Auto-decrypt?</span>
+		<input type="checkbox" id="autoDec">
+	</div>
+	<div id="enc">
+		<h3>Encrypted</h3>
+		<textarea name="encrypted" id="msgEnc" cols="30" rows="10"></textarea>
+	</div>
+</body>
+</html>
